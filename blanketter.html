@@ -2,22 +2,37 @@
 <html lang="sv-SE"
 <head>
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <link rel="stylesheet" href="styles.css">
 <title>Blanketter</title>
 </head>
 <body>
 <header>
-    <div class="logo">
-    <img src="bilder/TIS-logo-header-pos.png" alt="TIS-Logo" style="max-width: ;">
-</div>
-    <nav>
-<a href="#">Huvudsida</a>
-<a href="#">Karta</a>
-<a href="#">Information</a>
-<a href="#">Schema</a>
-<a href="#">Kontaktinformation</a>
-    </nav>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" style="padding: 0px;">
+            <img src="/bilder/TIS-logo-header-pos.png" alt="TIS LOGO" style="width: 45%;height:20%;"></a>
+        <a href="nyelev.html">Ny Elev</a>
+        <a href="blanketter.html" class="active" >Utskrifter & Blanketter</a>
+        <a href="lanedator.html">Lånedator</a>
+        <a href="lokaler.html">Lokaler</a>
+        <a href="elevskap.html">Elevskåp</a>
+        <div class="dropdown">
+            <button class="dropbtn">Frånvaro
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="sjukfranvaro.html">Sjukfrånvaro</a>
+              <a href="ledighet.html">Ledighet</a>
+              
+            </div>
+          </div>
+        <a href="vardnadshavare.html">Vårdnadshavare</a>
+        <a href="kontaktinfo.html">Kontaktinfo</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 </header>
 <div class="row">
 <aside>
@@ -40,5 +55,15 @@
 <footer>
 <p>Designed by Fredrik Nilgert</p>
 </footer>
+<script>
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
+</script>
 </body>
 </html>
